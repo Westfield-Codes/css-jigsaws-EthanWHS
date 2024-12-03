@@ -20,22 +20,21 @@ li {
   text-align:left;
 }
     /* Display each table in a row with inline-block */
-ol li{
+ li {
     display:inline-block;
   }
-    /* Put a rounded 2px black border box around all tables */
-    #tables ol{
+
+    /* Put a rounded 20px black border box around the timestables div */
+    #timestables, #tables ol {
       border:2px solid black;
       border-radius:20px;
     }
-    #timestables {
-      border:2px solid black;
-      border-radius:20px;
-    }
+        /* Put a rounded 10px black border box around eac times table */
+        #tables ol{
+      border-radius:10px; }
     /* underline the top numbers red */
     h4 {
-      text-decoration-line: underline;
-      text-decoration-color: red;
+         border-bottom:2px solid red;
     }
     /* go night mode on hovers over each timestable, but not the parent  */
   li ol:hover {
@@ -43,20 +42,26 @@ ol li{
     background-color:black;
   }
     /* 20 px space below the last equation in each table */
-ol { 
-  margin-bottom:20px;
+  ol li ol{ 
+  padding-bottom:20px;
 }
     /* add a top margin of 20px on each table, but not the parent */
-ol {
+  ol {
   margin-top:20px;
 }
-     /* subtract 20px from left margins of each child table, add it to the right margins */
-#tables {
+     /* subtract 20px from left margins of each child table, add it to the right margins 
+   li ol li {
   margin-left:-20px;
-}
-    /* put 25px padding at the bottom of the parent  */
-ol {
+} 
+     put 25px padding at the bottom of the parent  */
+  ol {
   padding-bottom:25px;
+}
+#tables {
+  text-align:center;
+}
+li ol li {
+  text-align:left;
 }
    </style>
 </head>
